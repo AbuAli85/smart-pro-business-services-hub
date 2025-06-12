@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { supabase } from "@/lib/supabase-client"
+import { supabase } from "@/lib/supabase/client"
 import { format } from "date-fns"
 import { Calendar, Clock, FileText, LayoutDashboard, Download, Upload, ExternalLink } from 'lucide-react'
 import { ClientProtectedRoute } from "@/components/auth/client-protected-route"

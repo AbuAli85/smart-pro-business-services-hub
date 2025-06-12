@@ -1,4 +1,4 @@
-import { supabase } from "@/lib/supabase-client"
+import { supabase } from "@/lib/supabase/client"
 
 // Get the dashboard URL based on user role
 export function getDashboardByRole(role: string | null): string {

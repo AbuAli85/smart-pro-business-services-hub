@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { useState, useEffect } from "react"
-import { supabase } from "@/lib/supabase-client"
+import { supabase } from "@/lib/supabase/client"
 import { Bell, Moon, Sun, Shield, Check, X } from "lucide-react"
 
 export default function SettingsPage() {

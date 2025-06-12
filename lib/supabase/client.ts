@@ -95,5 +95,16 @@ const createDummyClient = () => {
 }
 
 // Create the actual client or a dummy one
-export const supabase =
-  isBrowser && supabaseUrl && supabaseAnonKey ? createClient(supabaseUrl, supabaseAnonKey) : createDummyClient()
+let singleton: any
+
+export const getSupabaseClient = () => {
+  if (!singleton) {
+    singleton =
+      isBrowser && supabaseUrl && supabaseAnonKey
+        ? createClient(supabaseUrl, supabaseAnonKey)
+        : createDummyClient()
+  }
+  return singleton
+}
+
+export const supabase = getSupabaseClient()
