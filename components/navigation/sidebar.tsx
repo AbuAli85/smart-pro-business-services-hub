@@ -15,7 +15,7 @@ import {
   Menu,
   X,
 } from "lucide-react"
-import { supabase } from "@/lib/supabase-client"
+import { supabase } from "@/lib/supabase/client"
 
 export default function Sidebar() {
   const pathname = usePathname()

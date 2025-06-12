@@ -83,6 +83,13 @@ The easiest way to deploy the app is to use the [Vercel Platform](https://vercel
 - `/lib` - Utility functions and Supabase client
 - `/public` - Static assets
 
+## Supabase Client
+
+All parts of the application share a single Supabase client defined in
+`lib/supabase/client.ts`. The module exports a `getSupabaseClient()` factory which
+returns the singleton instance and a `supabase` shortcut for convenience. Import
+from `@/lib/supabase/client` whenever you need to access the database.
+
 ## Authentication Flow
 
 1. User signs up or logs in
@@ -113,6 +120,3 @@ The database includes the following tables:
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-\`\`\`
-
-Let's add a deployment configuration file:

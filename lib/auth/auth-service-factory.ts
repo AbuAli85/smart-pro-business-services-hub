@@ -7,7 +7,7 @@
  * auth service.
  */
 
-import { getGlobalSupabaseClient } from "@/lib/supabase/global-singleton"
+import { getSupabaseClient } from "@/lib/supabase/client"
 import { isDevelopment } from "@/lib/environment"
 
 // Define the interface for auth services
@@ -111,7 +111,7 @@ const createMockAuthService = (): AuthService => {
 
 // Real auth service using Supabase
 const createRealAuthService = (): AuthService => {
-  const supabase = getGlobalSupabaseClient()
+  const supabase = getSupabaseClient()
 
   return {
     signInWithPassword: async (params) => {

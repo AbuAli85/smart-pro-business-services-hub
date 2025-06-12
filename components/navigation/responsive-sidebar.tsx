@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Menu, X, Home, Calendar, FileText, MessageSquare, Settings, User, LogOut } from 'lucide-react'
 import { useSession } from '@/components/auth/session-provider'
-import { supabase } from '@/lib/supabase-client'
+import { supabase } from '@/lib/supabase/client'
 
 export function ResponsiveSidebar() {
   const pathname = usePathname()
