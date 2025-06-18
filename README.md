@@ -25,7 +25,7 @@ A comprehensive platform for managing business services, clients, bookings, and 
 
 ### Prerequisites
 
-- Node.js 18+ and npm
+- Node.js 18+ (npm is used as the package manager)
 - Supabase account
 
 ### Setup
@@ -37,7 +37,7 @@ git clone https://github.com/yourusername/smartpro-business-hub.git
 cd smartpro-business-hub
 \`\`\`
 
-2. Install dependencies:
+2. Install dependencies using npm:
 
 \`\`\`bash
 npm install
