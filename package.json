@@ -9,6 +9,7 @@
     "lint": "next lint",
     "check-deps": "node scripts/check-circular-deps.js"
   },
+  "postcss": "postcss.config.js",
   "dependencies": {
     "@ai-sdk/deepinfra": "^0.2.15",
     "@ai-sdk/groq": "^0.0.1",
